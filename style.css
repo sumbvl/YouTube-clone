@@ -334,7 +334,6 @@ main {
     color: var(--text-primary);
     line-height: 1.4;
     display: inline;
-    overflow: hidden;
     margin-bottom: 4px;
 }
 .channel-name {
