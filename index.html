@@ -7,15 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="sidebar-hidden">
+    <div class="screen-overlay"></div>
     <header class="header">
         <div class="container">
             <div class="header-left">
                 <button class="menu-btn">
-                    <img src="menu.png" alt="menu" width="30px" height="20px">
+                    <img src="assets/menu.png" alt="menu" class="menu-lines" width="30px" height="20px">
                 </button>
                 <div class="logo">
-                    <img src="logo.png" alt="YouTube logo" width="45px" height="30px">
+                    <img src="assets/logo.png" alt="YouTube logo" width="45px" height="30px">
                     <a href="https://www.youtube.com/" target="_self">YouTube <sup>PK</sup></a>
                 </div>
             </div>
@@ -23,23 +24,23 @@
                 <form class="search-form">
                     <input id="search" type="text" autocomplete="off" placeholder="Search" class="search-input">
                     <button type="submit" class="search-button">
-                        <img src="search.png" alt="search" class="search-icon">
+                        <img src="assets/search.png" alt="search" class="search-icon">
                     </button>
                 </form>
                 <button class="voice-btn">
-                    <img src="voice.png" alt="voice search" width="21" height="27">
+                    <img src="assets/voice.png" alt="voice search" class="voice-icon" width="21" height="27">
                 </button>
             </div>
             <div class="header-right">
                 <button class="create-button">
-                    <img src="create.png" alt="create" class="meow" width="90" height="30">
+                    <img src="assets/create.png" alt="create" class="meow" width="90" height="30">
                 </button>
                 <button class="notif-button">
-                    <img src="bell.png" alt="notification" class="header-icon">
+                    <img src="assets/bell.png" alt="notification" class="header-icon">
                     <span class="notif-badge">7</span>
                 </button>
                 <button class="profile-button">
-                    <img src="profile.png" alt="profile" class="profile-pic">
+                    <img src="assets/profile.png" alt="profile" class="profile-pic">
                 </button>
             </div>
         </div>
@@ -50,13 +51,13 @@
                 <ul class="sidebar-list">
                     <li class="sidebar-item active">
                         <a href="#">
-                            <img src="home.png" alt="home" class="sidebar-icon">
+                            <img src="assets/home.png" alt="home" class="sidebar-icon">
                             <span>Home</span>
                         </a>
                     </li>
                     <li class="sidebar-item">
                         <a href="#">
-                            <img src="shorts.png" alt="Shorts" class="sidebar-icon">
+                            <img src="assets/shorts.png" alt="Shorts" class="sidebar-icon">
                             <span>Shorts</span>
                         </a>
                     </li>
@@ -184,7 +185,7 @@
                             title="Pink Ombre Aura"></iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Chaandni (Official Lyric Video) | Sufr & Adil</h3>
                             <p class="channel-name">sufr</p>
@@ -192,14 +193,14 @@
                         </div>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card" data-category="gaming">
                     <div class="video-thumbnail-wrap">
                         <iframe src="https://www.youtube.com/embed/Uci5WARr66U?si=7ppfzGjTyNQDhIHY"
                             title="Pink Ombre Aura">
                         </iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink2.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink2.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Pink Ombre Aura</h3>
                             <p class="channel-name">wiwiwi</p>
@@ -207,13 +208,13 @@
                         </div>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card" data-category="fashion">
                     <div class="video-thumbnail-wrap">
                         <iframe src="https://www.youtube.com/embed/mY6gkE7ahP8?si=kHycWAI_MRFnC-Xt"
                             title="Pink Ombre Aura"></iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Chaandni (Official Lyric Video) | Sufr & Adil</h3>
                             <p class="channel-name">sufr</p>
@@ -221,14 +222,14 @@
                         </div>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card" data-category="live">
                     <div class="video-thumbnail-wrap">
                         <iframe src="https://www.youtube.com/embed/Uci5WARr66U?si=7ppfzGjTyNQDhIHY"
                             title="Pink Ombre Aura">
                         </iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink2.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink2.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Pink Ombre Aura</h3>
                             <p class="channel-name">wiwiwi</p>
@@ -236,13 +237,13 @@
                         </div>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card" data-category="food">
                     <div class="video-thumbnail-wrap">
                         <iframe src="https://www.youtube.com/embed/mY6gkE7ahP8?si=kHycWAI_MRFnC-Xt"
                             title="Pink Ombre Aura"></iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Chaandni (Official Lyric Video) | Sufr & Adil</h3>
                             <p class="channel-name">sufr</p>
@@ -250,14 +251,14 @@
                         </div>
                     </div>
                 </article>
-                <article class="video-card">
+                <article class="video-card" data-category="music">
                     <div class="video-thumbnail-wrap">
                         <iframe src="https://www.youtube.com/embed/Uci5WARr66U?si=7ppfzGjTyNQDhIHY"
                             title="Pink Ombre Aura">
                         </iframe>
                     </div>
                     <div class="video-info">
-                        <img src="pink2.jpg" alt="channel" class="channel-icon">
+                        <img src="assets/pink2.jpg" alt="channel" class="channel-icon">
                         <div class="video-details">
                             <h3 class="video-title">Pink Ombre Aura</h3>
                             <p class="channel-name">wiwiwi</p>
@@ -268,5 +269,6 @@
             </section>
         </main>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
