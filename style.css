@@ -186,6 +186,7 @@ button {
 .sidebar {
     position: sticky;
     top: var(--header-height);
+    z-index: 1000;
     width: var(--sidebar-width);
     max-height: calc(100vh - var(--header-height));
     overflow-y: auto;
@@ -193,6 +194,9 @@ button {
     scrollbar-width: none;
     background-color: #f8c8d7;
     padding: 0px 10px;
+}
+body.sidebar-hidden .sidebar {
+    display: none;
 }
 .sidebar-nav {
     padding: 12px 0;
@@ -363,4 +367,17 @@ main {
     main {
         padding: 0 12px;
     }
+}
+.screen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+body:not(.sidebar-hidden) .screen-overlay {
+    display: block;
 }
